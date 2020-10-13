@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import HomeTemplate from 'components/teplates/Home';
+import OneTemplate from 'components/teplates/One';
 
 const Home: FC = () => {
-  return <HomeTemplate />;
+  return <OneTemplate />;
 };
 
 export default Home;
