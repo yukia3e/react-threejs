@@ -3,7 +3,7 @@ import { Canvas } from 'react-three-fiber';
 import Controls from 'components/three/Controls';
 import Box from 'components/three/Box';
 
-const HomeTemplate: FC = () => {
+const TwoTemplate: FC = () => {
   const style = {
     width: '100vw',
     height: '100vh',
@@ -13,8 +13,8 @@ const HomeTemplate: FC = () => {
   return (
     <div style={style}>
       <Canvas>
-        <ambientLight intensity={0.5} />
         <Controls isControl />
+        <ambientLight intensity={0.5} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
         <pointLight position={[-10, -10, -10]} />
         <Box position={[-1.2, 0, 0]} />
@@ -24,4 +24,4 @@ const HomeTemplate: FC = () => {
   );
 };
 
-export default HomeTemplate;
+export default TwoTemplate;
