@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Canvas } from 'react-three-fiber';
 import Controls from 'components/three/Controls';
 import Box from 'components/three/Box';
+import GridHelper from 'components/three/GridHelper';
 
 const TwoTemplate: FC = () => {
   const style = {
@@ -19,6 +20,7 @@ const TwoTemplate: FC = () => {
         <pointLight position={[-10, -10, -10]} />
         <Box position={[-1.2, 0, 0]} />
         <Box position={[1.2, 0, 0]} />
+        <GridHelper size={4} divisions={4} />
       </Canvas>
     </div>
   );
